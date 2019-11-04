@@ -5,10 +5,10 @@ const searchInsert = (nums, target) => {
   let [left, right] = [0, nums.length - 1];
 
   while (left <= right) {
-    const center = parseInt((left + right) / 2, 10);
-    if (target < nums[center]) right = center - 1;
-    else if (target > nums[center]) left = center + 1;
-    else return center;
+    const median = parseInt((left + right) / 2, 10);
+    if (target < nums[median]) right = median - 1;
+    else if (target > nums[median]) left = median + 1;
+    else return median;
   }
   return left;
 };
