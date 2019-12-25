@@ -87,8 +87,8 @@ class MinHeap {
   }
 }
 
-function sort(arr) {
-  const res = [];
+function sort(arr = []) {
+  const a = [];
 
   const minHeap = new MinHeap();
 
@@ -97,9 +97,9 @@ function sort(arr) {
   });
 
   while (!minHeap.isEmpty()) {
-    res.push(minHeap.poll());
+    a.push(minHeap.poll());
   }
 
-  return res;
+  return a;
 }
 module.exports = sort;
