@@ -2,19 +2,19 @@
  * Shell Sort
  * 希尔排序
  */
-function sort(arr) {
-  const res = [...arr];
+function sort(arr = []) {
+  const a = [...arr];
 
-  let gap = Math.floor(res.length / 2);
+  let gap = Math.floor(a.length / 2);
 
   while (gap > 0) {
-    for (let i = 0; i < res.length - gap; i += 1) {
+    for (let i = 0; i < a.length - gap; i += 1) {
       let currentIndex = i;
       let gapIndex = i + gap;
 
       while (currentIndex >= 0) {
-        if (res[gapIndex] < res[currentIndex]) {
-          [res[gapIndex], res[currentIndex]] = [res[currentIndex], res[gapIndex]];
+        if (a[gapIndex] < a[currentIndex]) {
+          [a[gapIndex], a[currentIndex]] = [a[currentIndex], a[gapIndex]];
         }
         [currentIndex, gapIndex] = [currentIndex - gap, currentIndex];
       }
@@ -22,6 +22,6 @@ function sort(arr) {
 
     gap = Math.floor(gap / 2);
   }
-  return res;
+  return a;
 }
 module.exports = sort;
