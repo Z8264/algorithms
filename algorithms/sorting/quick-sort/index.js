@@ -2,20 +2,20 @@
  * Quick Sort
  * 快速排序
  */
-function sort(arr) {
-  const res = [...arr];
+function sort(arr = []) {
+  const a = [...arr];
 
-  if (res.length <= 1) return res;
+  if (a.length <= 1) return a;
 
   const left = [];
   const right = [];
   const center = [];
 
-  const centerNumber = res.shift();
+  const centerNumber = a.shift();
   center.push(centerNumber);
 
-  while (res.length) {
-    const current = res.shift();
+  while (a.length) {
+    const current = a.shift();
     if (current < centerNumber) {
       left.push(current);
     } else if (current > centerNumber) {
