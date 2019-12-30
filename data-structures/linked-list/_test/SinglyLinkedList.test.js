@@ -1,8 +1,8 @@
-const LinkedList = require('./SinglyLinkedList');
+const SinglyLinkedList = require('../SinglyLinkedList');
 
 
 test('push', () => {
-  const linkedList = new LinkedList();
+  const linkedList = new SinglyLinkedList();
   expect(linkedList.head).toBeNull();
   expect(linkedList.tail).toBeNull();
 
@@ -14,7 +14,7 @@ test('push', () => {
 });
 
 test('pop', () => {
-  const linkedList = new LinkedList();
+  const linkedList = new SinglyLinkedList();
 
   linkedList.push(1);
   linkedList.push(2);
@@ -46,7 +46,7 @@ test('pop', () => {
 });
 
 test('unshift', () => {
-  const linkedList = new LinkedList();
+  const linkedList = new SinglyLinkedList();
 
   linkedList.unshift(2);
   expect(linkedList.head.toString()).toBe('2');
@@ -59,7 +59,7 @@ test('unshift', () => {
 });
 
 test('shift', () => {
-  const linkedList = new LinkedList();
+  const linkedList = new SinglyLinkedList();
 
   expect(linkedList.shift()).toBeNull();
 
@@ -85,7 +85,7 @@ test('shift', () => {
 });
 
 test('reverse', () => {
-  const linkedList = new LinkedList();
+  const linkedList = new SinglyLinkedList();
   linkedList
     .push(1)
     .push(2)

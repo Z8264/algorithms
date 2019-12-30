@@ -1,7 +1,6 @@
 # 数据结构 (Data Structures)
 
-* [链表 (Linked List)]()
-* [双向链表 (Doubly Linked List)]()
+* [链表 (Linked List)](./linked-list)
 * [队列 (Queue)]()
 * [栈 (Stack)]()
 * [哈希表 (Hash Table)]()
