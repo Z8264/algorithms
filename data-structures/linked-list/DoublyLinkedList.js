@@ -1,6 +1,6 @@
-const SinglyLinkedListNode = require('./SinglyLinkedListNode');
+const DoublyLinkedListNode = require('./DoublyLinkedListNode');
 
-class SinglyLinkedList {
+class DoublyLinkedList {
   constructor() {
     this.head = null;
     this.tail = null;
@@ -11,18 +11,22 @@ class SinglyLinkedList {
    * @param {*} value
    */
   unshift(value) {
-    const node = new SinglyLinkedListNode(value, this.head);
-    this.head = node;
+    const node = new DoublyLinkedListNode(value, null, this.head);
 
-    if (!this.tail) {
+    if (this.head) {
+      this.head.prev = node;
+    } else {
       this.tail = node;
     }
+
+    this.head = node;
 
     return this;
   }
 
   /**
    * shift
+   * @param {*} value
    */
   shift() {
     if (!this.head) return null;
@@ -31,6 +35,7 @@ class SinglyLinkedList {
 
     if (this.head.next) {
       this.head = this.head.next;
+      this.head.prev = null;
     } else {
       this.head = null;
       this.tail = null;
@@ -41,13 +46,14 @@ class SinglyLinkedList {
 
   /**
    * push
-   * @param {*} value
+   * @param {DoublyLinkedListNode} value
    */
   push(value) {
-    const node = new SinglyLinkedListNode(value);
+    const node = new DoublyLinkedListNode(value);
 
     if (this.head) {
       this.tail.next = node;
+      node.prev = this.tail;
       this.tail = node;
     } else {
       this.head = node;
@@ -61,42 +67,19 @@ class SinglyLinkedList {
    * pop
    */
   pop() {
+    if (!this.tail) return null;
+
     const node = this.tail;
 
     if (this.head === this.tail) {
       this.head = null;
       this.tail = null;
     } else {
-      let current = this.head;
-      while (current.next) {
-        if (!current.next.next) {
-          current.next = null;
-        } else {
-          current = current.next;
-        }
-      }
-      this.tail = current;
+      this.tail = this.tail.prev;
+      this.tail.next = null;
     }
 
     return node;
-  }
-
-  /**
-   * reverse
-   */
-  reverse() {
-    let curr = this.head;
-    let [prev, next] = [null, null];
-    while (curr) {
-      next = curr.next;
-      curr.next = prev;
-
-      [prev, curr] = [curr, next];
-    }
-    this.tail = this.head;
-    this.head = prev;
-
-    return this;
   }
 
   /**
@@ -106,7 +89,7 @@ class SinglyLinkedList {
     const nodes = [];
     let node = this.head;
     while (node) {
-      nodes.push(node);
+      nodes.push(node.value);
       node = node.next;
     }
     return nodes;
@@ -121,4 +104,4 @@ class SinglyLinkedList {
   }
 }
 
-module.exports = SinglyLinkedList;
+module.exports = DoublyLinkedList;
