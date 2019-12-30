@@ -91,3 +91,53 @@ test('pop', () => {
   expect(linkedList.head).toBeNull();
   expect(linkedList.tail).toBeNull();
 });
+
+
+test('reverse', () => {
+  const linkedList = new DoublyLinkedList();
+
+  // Add test values to linked list.
+  linkedList
+    .push(1)
+    .push(2)
+    .push(3)
+    .push(4);
+
+  expect(linkedList.toString()).toBe('1,2,3,4');
+  expect(linkedList.head.value).toBe(1);
+  expect(linkedList.tail.value).toBe(4);
+
+  // Reverse linked list.
+  linkedList.reverse();
+
+  expect(linkedList.toString()).toBe('4,3,2,1');
+
+  expect(linkedList.head.prev).toBeNull();
+  expect(linkedList.head.value).toBe(4);
+  expect(linkedList.head.next.value).toBe(3);
+  expect(linkedList.head.next.next.value).toBe(2);
+  expect(linkedList.head.next.next.next.value).toBe(1);
+
+  expect(linkedList.tail.next).toBeNull();
+  expect(linkedList.tail.value).toBe(1);
+  expect(linkedList.tail.prev.value).toBe(2);
+  expect(linkedList.tail.prev.prev.value).toBe(3);
+  expect(linkedList.tail.prev.prev.prev.value).toBe(4);
+
+  // Reverse linked list back to initial state.
+  linkedList.reverse();
+
+  expect(linkedList.toString()).toBe('1,2,3,4');
+
+  expect(linkedList.head.prev).toBeNull();
+  expect(linkedList.head.value).toBe(1);
+  expect(linkedList.head.next.value).toBe(2);
+  expect(linkedList.head.next.next.value).toBe(3);
+  expect(linkedList.head.next.next.next.value).toBe(4);
+
+  expect(linkedList.tail.next).toBeNull();
+  expect(linkedList.tail.value).toBe(4);
+  expect(linkedList.tail.prev.value).toBe(3);
+  expect(linkedList.tail.prev.prev.value).toBe(2);
+  expect(linkedList.tail.prev.prev.prev.value).toBe(1);
+});
