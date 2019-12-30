@@ -1,7 +1,9 @@
 # 链表 (Linked List)
 
+
 * 单向链表 (Singly Linked List)
 * 双向链表 (Doubly Linked List)
+
 
 ## 属性
 
