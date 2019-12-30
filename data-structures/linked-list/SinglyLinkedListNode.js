@@ -1,4 +1,4 @@
-class LinkedListNode {
+class SinglyLinkedListNode {
   constructor(value, next = null) {
     this.value = value;
     this.next = next;
@@ -9,4 +9,4 @@ class LinkedListNode {
   }
 }
 
-module.exports = LinkedListNode;
+module.exports = SinglyLinkedListNode;
