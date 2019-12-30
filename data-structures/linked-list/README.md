@@ -5,12 +5,54 @@
 * 双向链表 (Doubly Linked List)
 
 
+## SinglyLinkedListNode
+
+``` js
+class SinglyLinkedListNode {
+  constructor(value, next = null) {
+    this.value = value;
+    this.next = next;
+  }
+}
+```
+
+## DoublyLinkedListNode 
+
+``` js
+class DoublyLinkedListNode {
+  constructor(value, prev = null, next = null) {
+    this.value = value;
+    this.prev = prev;
+    this.next = next;
+  }
+}
+```
+
 ## 属性
+
 
 | 属性 |        |
 | ---- | ------ |
 | head | 头节点 |
 | tail | 尾节点 |
+
+``` js
+class SinglyLinkedList {
+  constructor() {
+    this.head = null;
+    this.tail = null;
+  }
+}
+```
+
+``` js
+class DoublyLinkedList {
+  constructor() {
+    this.head = null;
+    this.tail = null;
+  }
+}
+```
 
 ## 方法
 
