@@ -1,9 +1,20 @@
 # 数据结构 (Data Structures)
 
+
+* [栈 (Stack)](./stack)
+* [队列 (Queue)](./queue)
 * [链表 (Linked List)](./linked-list)
-* [队列 (Queue)]()
-* [栈 (Stack)]()
-* [哈希表 (Hash Table)]()
+* [散列表 (Hash Table)](./hash-table)
+* [树 (Tree)](./tree)
+  * [二叉搜索树 (Binary Search Tree)](./tree/binary-search-tree)
+  * [AVL树 (Adelson-Velskii-Landi Tree)](./tree/avl-tree)
+  * [红黑树 (Red-Black Tree)](./tree/red-black-tree)
+  * [线段树 (Segment Tree)](./tree/segment-tree)
+  * [芬威克树 (Fenwick Tree)](./tree/fenwick-tree)
 * [堆 (Heap)]()
-* [树 (Tree)]()
 * [图 (Graph)]()
+
+
+* [数组 (Array)]
+* [集合 (Set)]
+* [字典 (Dictionary)]
