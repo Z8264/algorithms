@@ -1,9 +1,14 @@
 # 数据结构 (Data Structures)
 
-
+* [数组 (Array)]()
+* [集合 (Set)]()
+* [字典 (Dictionary)]()
+* [链表 (Linked List)](./linked-list)
+  * [单向链表 (Singly Linked List)]()
+  * [双向链表 (Doubly Linked List)]()
+  * [循环链表 (Circular Linked List)]()
 * [栈 (Stack)](./stack)
 * [队列 (Queue)](./queue)
-* [链表 (Linked List)](./linked-list)
 * [散列表 (Hash Table)](./hash-table)
 * [树 (Tree)](./tree)
   * [二叉搜索树 (Binary Search Tree)](./tree/binary-search-tree)
@@ -15,6 +20,3 @@
 * [图 (Graph)]()
 
 
-* [数组 (Array)]
-* [集合 (Set)]
-* [字典 (Dictionary)]
