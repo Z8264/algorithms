@@ -5,8 +5,8 @@ class DoublyLinkedListNode {
     this.next = next;
   }
 
-  toString(cb) {
-    return cb ? cb(this.value) : this.value.toString();
+  toString() {
+    return this.value.toString();
   }
 }
 
