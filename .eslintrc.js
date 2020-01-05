@@ -7,6 +7,7 @@ module.exports = {
     jest: true
   },
   rules: {
-    "no-console": process.env.NODE_ENV !== "production" ? 0 : 2
+    "no-console": process.env.NODE_ENV !== "production" ? 0 : 2,
+    "no-param-reassign":0
   }
 };

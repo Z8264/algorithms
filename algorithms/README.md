@@ -25,13 +25,13 @@
 
 ## 数学 (Math)
 
-* [阶乘 (Factorial)]()
-* [斐波那契数 ()]()
-* [素树检测 ()]()
+* [阶乘 (Factorial)](./math/facotrial)
+* [斐波那契数 (Fibonacci)](./math/fibonacci)
+* [素数 (Primality)](./math/primality)
 * [最大公约数]()
 * [最小公倍数]()
 * [复数]()
-* [弧度和角]()
+* [弧度和角]()00
 * [割圆术]()
 * [杨辉三角形 ()]()
 
