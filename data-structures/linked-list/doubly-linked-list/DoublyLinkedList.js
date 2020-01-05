@@ -46,7 +46,7 @@ class DoublyLinkedList {
 
   /**
    * push
-   * @param {DoublyLinkedListNode} value
+   * @param {*} value
    */
   push(value) {
     const node = new DoublyLinkedListNode(value);
@@ -86,10 +86,10 @@ class DoublyLinkedList {
    * reverse
    */
   reverse() {
-    let current = this.head;
-    while (current) {
-      [current.prev, current.next] = [current.next, current.prev];
-      current = current.prev;
+    let node = this.head;
+    while (node) {
+      [node.prev, node.next] = [node.next, node.prev];
+      node = node.prev;
     }
     [this.head, this.tail] = [this.tail, this.head];
     return this;
@@ -110,10 +110,9 @@ class DoublyLinkedList {
 
   /**
    * toString
-   * @param {function} cb
    */
-  toString(cb) {
-    return this.toArray().map((node) => node.toString(cb)).toString();
+  toString() {
+    return this.toArray().map((node) => node.toString()).toString();
   }
 }
 
