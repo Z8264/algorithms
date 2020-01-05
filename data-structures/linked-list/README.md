@@ -3,56 +3,22 @@
 
 * 单向链表 (Singly Linked List)
 * 双向链表 (Doubly Linked List)
+* 循环链表 (Circular Linked List)
 
+## 结点 (Node)
 
-## SinglyLinkedListNode
-
-``` js
-class SinglyLinkedListNode {
-  constructor(value, next = null) {
-    this.value = value;
-    this.next = next;
-  }
-}
-```
-
-## DoublyLinkedListNode 
-
-``` js
-class DoublyLinkedListNode {
-  constructor(value, prev = null, next = null) {
-    this.value = value;
-    this.prev = prev;
-    this.next = next;
-  }
-}
-```
+| 属性 |            |
+| ---- | ---------- |
+| prev | 前一个结点 |
+| next | 下一个结点 |
 
 ## 属性
-
 
 | 属性 |        |
 | ---- | ------ |
 | head | 头节点 |
 | tail | 尾节点 |
 
-``` js
-class SinglyLinkedList {
-  constructor() {
-    this.head = null;
-    this.tail = null;
-  }
-}
-```
-
-``` js
-class DoublyLinkedList {
-  constructor() {
-    this.head = null;
-    this.tail = null;
-  }
-}
-```
 
 ## 方法
 
@@ -65,3 +31,6 @@ class DoublyLinkedList {
 | reverse  | 反转链表           |
 | toArray  | 转换为数组         |
 | toString | 转换为字符串       |
+
+
+
