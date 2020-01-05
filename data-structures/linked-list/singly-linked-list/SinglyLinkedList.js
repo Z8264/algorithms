@@ -114,10 +114,9 @@ class SinglyLinkedList {
 
   /**
    * toString
-   * @param {function} cb
    */
-  toString(cb) {
-    return this.toArray().map((node) => node.toString(cb)).toString();
+  toString() {
+    return this.toArray().map((node) => node.toString()).toString();
   }
 }
 
