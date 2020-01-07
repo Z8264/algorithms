@@ -5,4 +5,9 @@
 
 ### 递归 (Recursion)
 
+[factorial-recursive.js](./factorial-recursive.js)
+
 ### 自底向上进行迭代 (Iterative Top-Down Approach)
+
+[factorial-iterative.js](./factorial-iterative.js)
+

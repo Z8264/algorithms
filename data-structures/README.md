@@ -7,7 +7,6 @@
   * [单向链表 (Singly Linked List)]()
   * [双向链表 (Doubly Linked List)]()
   * [循环链表 (Circular Linked List)]()
-  * [有序链表 (Sorted Linked List)]()
 * [栈 (Stack)](./stack)
 * [队列 (Queue)](./queue)
 * [散列表 (Hash Table)](./hash-table)
