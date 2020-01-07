@@ -1,46 +1,15 @@
 const { isPalindrome, isPalindrome2, isPalindrome3 } = require('./isPalindrome');
 
-test('isPalindrome 121', () => {
-  const res = isPalindrome(121);
-  expect(res).toEqual(true);
-});
+test('isPalindrome', () => {
+  expect(isPalindrome(121)).toEqual(true);
+  expect(isPalindrome(-121)).toEqual(false);
+  expect(isPalindrome(10)).toEqual(false);
 
-test('isPalindrome -121', () => {
-  const res = isPalindrome(-121);
-  expect(res).toEqual(false);
-});
+  expect(isPalindrome2(121)).toEqual(true);
+  expect(isPalindrome2(-121)).toEqual(false);
+  expect(isPalindrome2(10)).toEqual(false);
 
-test('isPalindrome 10', () => {
-  const res = isPalindrome(10);
-  expect(res).toEqual(false);
-});
-
-test('isPalindrome2 121', () => {
-  const res = isPalindrome2(121);
-  expect(res).toEqual(true);
-});
-
-test('isPalindrome2 -121', () => {
-  const res = isPalindrome2(-121);
-  expect(res).toEqual(false);
-});
-
-test('isPalindrome2 10', () => {
-  const res = isPalindrome2(10);
-  expect(res).toEqual(false);
-});
-
-test('isPalindrome3 121', () => {
-  const res = isPalindrome3(121);
-  expect(res).toEqual(true);
-});
-
-test('isPalindrome3 -121', () => {
-  const res = isPalindrome3(-121);
-  expect(res).toEqual(false);
-});
-
-test('isPalindrome3 10', () => {
-  const res = isPalindrome3(10);
-  expect(res).toEqual(false);
+  expect(isPalindrome3(121)).toEqual(true);
+  expect(isPalindrome3(-121)).toEqual(false);
+  expect(isPalindrome3(10)).toEqual(false);
 });

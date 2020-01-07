@@ -1,6 +1,5 @@
 const lengthOfLastWord = require('./lengthOfLastWord.js');
 
-test('Hello World', () => {
-  const res = lengthOfLastWord('Hello World');
-  expect(res).toBe(5);
+test('lengthOfLastWord', () => {
+  expect(lengthOfLastWord('Hello World')).toBe(5);
 });
