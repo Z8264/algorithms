@@ -2,7 +2,7 @@ const ListNode = require('./ListNode');
 const addTwoNumbers = require('./addTwoNumbers');
 
 
-test('addTwoNumbers 3->4->2 4->6->5', () => {
+test('addTwoNumbers', () => {
   const l1 = new ListNode(3);
   l1.next = new ListNode(4);
   l1.next.next = new ListNode(2);
