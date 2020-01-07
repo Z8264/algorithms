@@ -4,6 +4,9 @@
 
 ## 试除法 (Trial Division Method)
 
+[primality-division.js](./primality-division.js)
+
 ## 埃拉托斯特尼筛法 (Sieve of Eratosthenes)
 
-## 费马小定理
+[countPrimes-sieve.js](./countPrimes-sieve.js)
+
