@@ -1,6 +1,6 @@
 const removeElement = require('./removeElement.js');
 
-test('[3, 2, 2, 3]', () => {
+test('removeElement', () => {
   const arr = [3, 2, 2, 3];
   const res = removeElement(arr, 3);
   expect(res).toBe(2);
