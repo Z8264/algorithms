@@ -1,11 +1,6 @@
 const climbStairs = require('./climbStairs');
 
-test('2', () => {
-  const res = climbStairs(2);
-  expect(res).toBe(2);
-});
-
-test('3', () => {
-  const res = climbStairs(3);
-  expect(res).toBe(3);
+test('climbStairs', () => {
+  expect(climbStairs(2)).toBe(2);
+  expect(climbStairs(3)).toBe(3);
 });

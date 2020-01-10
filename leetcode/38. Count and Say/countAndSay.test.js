@@ -1,11 +1,6 @@
 const countAndSay = require('./countAndSay.js');
 
-test('1', () => {
-  const res = countAndSay(1);
-  expect(res).toBe('1');
-});
-
-test('4', () => {
-  const res = countAndSay(4);
-  expect(res).toBe('1211');
+test('countAndSay', () => {
+  expect(countAndSay(1)).toBe('1');
+  expect(countAndSay(4)).toBe('1211');
 });

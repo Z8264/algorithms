@@ -1,7 +1,4 @@
 
-
-
-
 # 算法
 
 
@@ -25,16 +22,12 @@
 
 ## 数学 (Math)
 
-* [阶乘 (Factorial)]()
-* [斐波那契数 ()]()
-* [素树检测 ()]()
-* [最大公约数]()
-* [最小公倍数]()
-* [复数]()
-* [弧度和角]()
-* [割圆术]()
-* [杨辉三角形 ()]()
-
+* [阶乘 (Factorial)](./math/facotrial)
+* [斐波那契数 (Fibonacci)](./math/fibonacci)
+* [素数 (Primality)](./math/primality)
+* [最大公约数 (Greatest Common Divisor)](./math/greatest-common-divisor)
+* [最小公倍数 (Least Common Multiple)](./math/least-common-multiple)
+* [幂 (Power)](./math/power)
 
 ## 图 ()
 
@@ -49,3 +42,5 @@
 * [动态规划算法 (Dynamic Programming)]()
 * [回溯算法 (Backtracking)]()
 * [分支界限算法 (Branch & Bound)]()
+
+

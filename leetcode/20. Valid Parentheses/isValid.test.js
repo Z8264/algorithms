@@ -1,21 +1,8 @@
 const isValid = require('./isValid.js');
 
-test('"()"', () => {
-  const res = isValid('()');
-  expect(res).toBe(true);
-});
-
-test('"()[]{}"', () => {
-  const res = isValid('()[]{}');
-  expect(res).toBe(true);
-});
-
-test('"(]"', () => {
-  const res = isValid('(]');
-  expect(res).toBe(false);
-});
-
-test('"([)]"', () => {
-  const res = isValid('([)]');
-  expect(res).toBe(false);
+test('isValid', () => {
+  expect(isValid('()')).toBe(true);
+  expect(isValid('()[]{}')).toBe(true);
+  expect(isValid('(]')).toBe(false);
+  expect(isValid('([)]')).toBe(false);
 });

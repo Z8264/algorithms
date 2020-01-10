@@ -13,6 +13,7 @@ const lengthOfLongestSubstring = (s) => {
 /**
  * 使用对象，性能远低于字符串indexOf查找
  */
+/**
 const lengthOfLongestSubstring2 = (s) => {
   const o = {};
   let [max, start] = [0, 0];
@@ -23,4 +24,5 @@ const lengthOfLongestSubstring2 = (s) => {
   }
   return max;
 };
-module.exports = { lengthOfLongestSubstring, lengthOfLongestSubstring2 };
+*/
+module.exports = lengthOfLongestSubstring;
