@@ -8,6 +8,7 @@ module.exports = {
   },
   rules: {
     "no-console": process.env.NODE_ENV !== "production" ? 0 : 2,
-    "no-param-reassign":0
+    "no-param-reassign":0,
+    "no-bitwise":0
   }
 };

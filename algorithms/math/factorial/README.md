@@ -1,7 +1,7 @@
 # 阶乘 (Factorial)
 
 
-## 题解
+## 计算 n 的阶乘
 
 ### 递归 (Recursion)
 
