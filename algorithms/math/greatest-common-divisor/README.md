@@ -1,7 +1,7 @@
 # 最大公约数 (Greatest Common Divisor)
 
 
-## 题解
+## 计算最大公约数
 
 ### 欧几里得算法 (Euclidean Algorithm)
 

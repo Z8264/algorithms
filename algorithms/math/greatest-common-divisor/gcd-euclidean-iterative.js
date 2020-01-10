@@ -1,4 +1,4 @@
-const euclidean = (a, b) => {
+const gcd = (a, b) => {
   let max = Math.max(Math.abs(a), Math.abs(b));
   let min = Math.min(Math.abs(a), Math.abs(b));
 
@@ -9,4 +9,4 @@ const euclidean = (a, b) => {
   return max;
 };
 
-module.exports = euclidean;
+module.exports = gcd;
