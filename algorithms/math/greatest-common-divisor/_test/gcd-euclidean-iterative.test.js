@@ -1,4 +1,4 @@
-const euclidean = require('../euclidean-recursive');
+const euclidean = require('../gcd-euclidean-iterative');
 
 
 test('euclidean', () => {

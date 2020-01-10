@@ -1,7 +1,4 @@
 
-
-
-
 # 算法
 
 
@@ -30,11 +27,7 @@
 * [素数 (Primality)](./math/primality)
 * [最大公约数 (Greatest Common Divisor)](./math/greatest-common-divisor)
 * [最小公倍数 (Least Common Multiple)](./math/least-common-multiple)
-* [复数]()
-* [弧度和角]()
-* [割圆术]()
-* [杨辉三角形 ()]()
-
+* [幂 (Power)](./math/power)
 
 ## 图 ()
 
@@ -49,3 +42,5 @@
 * [动态规划算法 (Dynamic Programming)]()
 * [回溯算法 (Backtracking)]()
 * [分支界限算法 (Branch & Bound)]()
+
+
