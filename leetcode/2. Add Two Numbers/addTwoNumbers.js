@@ -1,5 +1,4 @@
-/* eslint-disable no-param-reassign */
-const ListNode = require('./ListNode');
+const { ListNode } = require('../_utils/ListNode');
 
 const addTwoNumbers = (l1, l2) => {
   if (!l1) return l2;

@@ -1,19 +1,9 @@
-const ListNode = require('./ListNode');
+const { from, toString } = require('../_utils/ListNode');
 const addTwoNumbers = require('./addTwoNumbers');
 
 
 test('addTwoNumbers', () => {
-  const l1 = new ListNode(3);
-  l1.next = new ListNode(4);
-  l1.next.next = new ListNode(2);
-
-  const l2 = new ListNode(4);
-  l2.next = new ListNode(6);
-  l2.next.next = new ListNode(5);
-
-  const res = addTwoNumbers(l1, l2);
-
-  expect(res.val).toBe(7);
-  expect(res.next.val).toBe(0);
-  expect(res.next.next.val).toBe(8);
+  const l1 = from([3, 4, 2]);
+  const l2 = from([4, 6, 5]);
+  expect(toString(addTwoNumbers(l1, l2))).toBe('7,0,8');
 });
