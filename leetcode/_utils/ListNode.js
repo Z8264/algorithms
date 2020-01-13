@@ -35,5 +35,28 @@ const toString = (head) => {
   return arr.toString();
 };
 
+/**
+ * circle
+ * @param {ListNode} head
+ */
 
-module.exports = { ListNode, from, toString };
+const circle = (arr, n) => {
+  const head = from(arr);
+
+  let nth = head;
+  while (n) {
+    nth = nth.next;
+    n -= 1;
+  }
+
+  let current = nth;
+  while (current.next) {
+    current = current.next;
+  }
+  current.next = nth;
+  return head;
+};
+
+module.exports = {
+  ListNode, from, toString, circle,
+};
