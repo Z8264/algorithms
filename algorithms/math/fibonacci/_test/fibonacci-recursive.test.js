@@ -1,6 +1,5 @@
 const fibonacci = require('../fibonacci-recursive');
 
-
 test('fibonacci: recurisive', () => {
   expect(fibonacci(0)).toBe(0);
   expect(fibonacci(1)).toBe(1);
