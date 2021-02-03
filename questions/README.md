@@ -3,7 +3,7 @@
 
 ### QUESTION
 
-代码输入：
+Input：
 
 ``` javascript
 const el = require('./element.js')；
@@ -16,7 +16,7 @@ const ulRoot = ul.render();
 document.body.appendChild(ulRoot);
 ```
 
-代码输出：
+Output:
 
 ``` html
 <ul id='list'>
@@ -26,8 +26,7 @@ document.body.appendChild(ulRoot);
 </ul>
 ```
 
-实现一下 element.js
-
+Implement element.js
 ### ANSWER
 
 ``` javascript
@@ -52,3 +51,7 @@ class El {
 }
 module.exports = (...params) => new El(...params);
 ```
+
+
+## 002
+
