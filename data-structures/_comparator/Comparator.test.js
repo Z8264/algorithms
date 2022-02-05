@@ -21,7 +21,6 @@ test('compare with defaul function', () => {
   expect(fn.greaterOrEqual(0, 1)).toBe(false);
 });
 
-
 test('compare with custom function', () => {
   const fn = new Comparator((a, b) => {
     if (a.length === b.length) return 0;

@@ -1,14 +1,13 @@
 module.exports = {
   root: true,
-  extends: "airbnb-base",
-  parser: "babel-eslint",
+  extends: 'airbnb-base',
   env: {
     node: true,
-    jest: true
+    jest: true,
   },
   rules: {
-    "no-console": process.env.NODE_ENV !== "production" ? 0 : 2,
-    "no-param-reassign":0,
-    "no-bitwise":0
-  }
+    'no-console': process.env.NODE_ENV !== 'production' ? 0 : 2,
+    'no-param-reassign': 0,
+    'no-bitwise': 0,
+  },
 };
