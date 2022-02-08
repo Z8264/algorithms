@@ -2,16 +2,17 @@
 
 **Contents**
 
-01. Middle
-02. Swap
-03. Cycle
-04. Remove
-05. Reverse
-06. Sort
-07. Partition
-08. Intersection
-09. Palindrome
-10. Copy
+1.  **Middle** - The middle node
+2.  **Swap** - Swap every two adjacent nodes
+3.  **Cycle** - The node where the cycle begins
+4.  **Remove** - Remove the nth node from the end of the list
+5.  **Reverse** - Reverse a list from position m to n
+6.  **Sort** - Sort in ascending order
+7.  **Partition** - All nodes less than x come before nodes greater than or equal to x
+8.  **Intersection** - The intersection of two linked lists begins
+9.  **Palindrome** - Palindrome judgment
+10. **Copy** - Each node contains an additional random pointer
+
 
 **Node**
 
@@ -97,12 +98,14 @@ const swap = (head) => {
 Given a linked list, return the node where the cycle begins. If there is no cycle, return null.
 
 Example: Tail connects to the second node.
+
 ```
 Input: head = 1->2->3->4, [4->2]
 Output: head = 2->3->4
 ```
 
 Example: No cycle
+
 ```
 Input: head = 1->2
 Output: null
@@ -137,6 +140,7 @@ const cycle = (head) => {
 Given the head of a linked list, remove the nth node from the end of the list and return its head.
 
 Example: 
+
 ```
 Input: head = 1->2->3->4->5, n = 2
 Output: head = 1->2->3->5

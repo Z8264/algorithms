@@ -2,18 +2,18 @@
 
 **Contents**
 
-1. Traversal
-2. Depth
-3. Construct
-4. View 
-5. Invert
-6. Same Tree
-7. Binary Search Tree
-8. Height Balanced
-9. Path Sum
-10. Ancestor
+1. **Traversal** - Inorder & Preorder & Postorder & LevelOrder
+2. **Depth** - Maximum Depth & Minimum Depth
+3. **Construct** - Construct Binary Tree from Traversal
+4. **View** - Right Side View & Left Side View
+5. **Invert** - Invert left and right
+6. **Same** - Same judgment
+7. **Symmetric** - Symmetric judgment
+8. **Binary Search Tree** - BST judgment
+9. **Height Balanced** - Height Balanced judgment
+10. **Path Sum** - All root-to-leaf paths where each path's sum equals targetSum
 
-**TreeNode**
+**Node**
 
 ``` javascript
 class TreeNode {
@@ -27,8 +27,12 @@ class TreeNode {
 
 **Concepts**
 
-* **DFS**: Depth First Search
-* **BFS**: Breadth First Search
+* **Recursion**
+* **Iteration**
+* **DFS** - Depth First Search
+* **BFS** - Breadth First Search
+* **BST** - Binary Search Tree
+* **Height Balanced**
 
 ## 01. Traversal
 
@@ -36,10 +40,9 @@ Given the root of a binary tree, return the inorder/preorder/postorder/levelOrde
 
 **Inorder**
 
+Recursion:
+
 ``` javascript
-/**
- * recursion
- */
 const inorder = (root, arr = []) => {
   if (root) {
     inorder(root.left, arr);
@@ -50,10 +53,9 @@ const inorder = (root, arr = []) => {
 };
 ```
 
+Iteration:
+
 ``` javascript
-/**
- * iteration
- */
 const inorder = (root) => {
   const stack = [];
   const result = [];
@@ -72,10 +74,9 @@ const inorder = (root) => {
 
 **Preorder**
 
+Recursion:
+
 ``` javascript
-/**
- * recursion
- */
 const preorder = (root, arr = []) => {
   if (root) {
     arr.push(root.val);
@@ -86,10 +87,9 @@ const preorder = (root, arr = []) => {
 };
 ```
 
+Iteration:
+
 ``` javascript
-/**
- * iteration
- */
 const preorder = (root) => {
   const stack = [];
   const result = [];
@@ -108,10 +108,9 @@ const preorder = (root) => {
 
 **Postorder**
 
+Recursion:
+
 ``` javascript
-/**
- * recursion
- */
 const postorder = (root, arr = []) => {
   if (root) {
     postorder(root.left, arr);
@@ -122,10 +121,9 @@ const postorder = (root, arr = []) => {
 };
 ```
 
+Iteration:
+
 ``` javascript
-/**
- * iteration
- */
 const postorder = (root) => {
   const stack = [];
   const result = [];
@@ -149,12 +147,12 @@ const postorder = (root) => {
   return result;
 };
 ```
+
 **Level Order** - from left to right, level by level.
 
+Recursion:
+
 ``` javascript
-/**
- * recursion
- */
 const levelOrder = (root, level = 0, arr = []) => {
   if (root) {
     if (!arr[level]) arr[level] = [];
@@ -166,10 +164,10 @@ const levelOrder = (root, level = 0, arr = []) => {
 };
 ```
 
+Iteration:
+
+
 ``` javascript
-/**
- * iteration
- */
 const levelOrder = (root) => {
   if (!root) return [];
   const queue = [root];
@@ -190,21 +188,23 @@ const levelOrder = (root) => {
   return result;
 };
 ```
+
 ## 02. Depth
 
 Given the root of a binary tree, return its maximum/minimum depth.
 
 **Maximum Depth** - A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
 
+DFS:
+
 ``` javascript
-/**
- * DFS
- */
 const maxDepth = (root) => {
   if (!root) return 0;
   return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
 };
 ```
+
+BFS:
 
 ``` javascript
 /**
@@ -230,10 +230,9 @@ const maxDepth = (root) => {
 
 **Minimum Depth** - The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
 
+DFS:
+
 ``` javascript
-/**
- * DFS
- */
 const minDepth = (root, min = Infinity) => {
   if (!root) return 0;
   if (!root.left && !root.right) return 1;
@@ -248,10 +247,10 @@ const minDepth = (root, min = Infinity) => {
 };
 ```
 
+BFS:
+
+
 ``` javascript
-/**
- * BFS
- */
 const minDepth = (root) => {
   if (!root) return 0;
   const queue = [root];
@@ -273,15 +272,16 @@ const minDepth = (root) => {
 
 ## 03. Construct
 
-Given preorder and inorder traversal of a tree, construct the binary tree.
+Construct Binary Tree from Preorder and Inorder Traversal.
+
 
 Solution:
 
 ``` javascript
 // To do
 ```
+Construct Binary Tree from Inorder and Postorder Traversal.
 
-Given inorder and postorder traversal of a tree, construct the binary tree.
 
 Solution:
 
@@ -388,8 +388,18 @@ const isSameTree = (p, q) => {
 };
 ```
 
+## 07. Symmetric
 
-## 07. Binary Search Tree
+Given the root of a binary tree, check whether it is symmetric around its center.
+
+
+Solution:
+
+```
+```
+
+
+## 08. Binary Search Tree
 
 Given the root of a binary tree, determine if it is a valid binary search tree (BST).
 
@@ -399,11 +409,9 @@ BST defined:
 * The right subtree of a node contains only nodes with keys greater than the node's key.
 * Both the left and right subtrees must also be binary search trees.
 
+Recursion:
 
 ``` javascript
-/**
- * recursion
- */
 const isBST = (root, min = -Infinity, max = Infinity) => {
   if (!root) return true;
   if (root.val <= min || root.val >= max) return false;
@@ -411,7 +419,7 @@ const isBST = (root, min = -Infinity, max = Infinity) => {
 };
 ```
 
-## 08. Height Balanced
+## 09. Height Balanced
 
 Given a binary tree, determine if it is height-balanced.
 
@@ -434,7 +442,7 @@ const isBalanced = (root) => {
 };
 ```
 
-## 09. Path Sum
+## 10. Path Sum
 
 Given the root of a binary tree and an integer targetSum, return all root-to-leaf paths where each path's sum equals targetSum.
 
@@ -454,14 +462,3 @@ const pathSum = (root, sum = 0) => {
   return (root && fn(root, 0, [])) || result;
 };
 ```
-
-
-## 10. Ancestor
-
-Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
-
-
-``` javascript
-// to do
-```
-
