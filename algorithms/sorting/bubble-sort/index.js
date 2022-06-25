@@ -1,6 +1,5 @@
 /**
  * Bubbler Sort
- * 冒泡排序
  */
 function sort(arr = []) {
   const a = [...arr];

@@ -5,16 +5,17 @@
 
 ## 排序 (Sorting)
 
-* [冒泡排序 (Bubble Sort)](./sorting/bubble-sort/README.md)
-* [选择排序 (Selection Sort)](./sorting/selection-sort/README.md)
-* [插入排序 (Insertion Sort)](./sorting/insertion-sort/README.md)
-* [归并排序 (Merge Sort)](./sorting/merge-sort/README.md)
-* [快速排序 (Quick Sort)](./sorting/quick-sort/README.md)
-* [希尔排序 (Shell Sort)](./sorting/shell-sort/README.md)
-* [堆排序 (Heap Sort)](./sorting/heap-sort/README.md)
-* [桶排序 ()]()
-* [计数排序 ()]()
-* [基数排序 ()]()
+| **名称**                                           | **名称 (En)**      | **最优** | **平均**       | **最坏**     | **内存** | **稳定** |
+| -------------------------------------------------- | ------------------ | -------- | -------------- | ------------ | -------- | -------- |
+| [**冒泡排序**]((./sorting/bubble-sort.md))  | **Bubble sort**    | n        | n^2            | n^2          | 1        | Yes      |
+| [**插入排序**](./sorting/insertion-sort/README.md) | **Insertion sort** | n        | n^2            | n^2          | 1        | Yes      |
+| [**选择排序**](./sorting/selection-sort/README.md) | **Selection sort** | n^2      | n^2            | n^2          | 1        | No       |
+| [**堆排序**](./sorting/heap-sort/README.md)        | **Heap sort**      | n log(n) | n log(n)       | n log(n)     | 1        | No       |
+| [**归并排序**](./sorting/merge-sort/README.md)     | **Merge sort**     | n log(n) | n log(n)       | n log(n)     | n        | Yes      |
+| [**快速排序**](./sorting/quick-sort/README.md)     | **Quick sort**     | n log(n) | n log(n)       | n^2          | log(n)   | No       |
+| [**希尔排序**](./sorting/shell-sort/README.md)     | **Shell sort**     | n log(n) | 取决于差距序列 | n (log(n))^2 | 1        | No       |
+| [**计数排序**]                                     | **Counting sort**  | n + r    | n + r          | n + r        | n + r    | Yes      |
+| [**基数排序**]                                     | **Radix sort**     | n * k    | n * k          | n * k        | n + k    | Yes      |
 
 ## 字符串 (String)
 
@@ -42,5 +43,4 @@
 * [动态规划算法 (Dynamic Programming)]()
 * [回溯算法 (Backtracking)]()
 * [分支界限算法 (Branch & Bound)]()
-
 

@@ -1,12 +1,11 @@
 
-
 # 冒泡排序 (Bubble Sort)
 
 冒泡排序，通过反复遍历需要排序的元素，比较每对相邻项，并按照升序或降序交换。每次遍历可以确定一个最大或最小的元素，则下次遍历不需要在比较这个元素。如果一次遍历中没有发生交换，则不需要继续遍历。
 
 ## 图解
 
-![](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
+![bubble sort](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
 
 ## 代码
 
@@ -14,14 +13,14 @@
 
 返回按照升序排序的指定数组，不改变原数组
 
-```bash
+``` bash
 Input: [2,3,1,4]
 Output: [1,2,3,4]
 ```
 
 ### Solution
 
- ```js
+ ``` js
 function sort(arr = []) {
   const a = [...arr];
   let swapped = false;
@@ -45,6 +44,7 @@ function sort(arr = []) {
 使用 $C$ 表示比较次数，$M$ 表示移动次数
 
 最好情况下：
+
 $$
 C_{min}=n-1
 $$
@@ -76,4 +76,3 @@ O(1)
 ### 稳定性 (Stable)
 
 由于两个元素相等不会被交换顺序，所以，冒泡排序是稳定排序。
-
